@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %} {% block body %}
+
+<div class="container">
+  <h1>{{ entry.headline }}</h1>
+  <p>{{ entry.story }}</p>
+  <br />
+  <p>
+    Written by <b>{{ entry.bloggerName }}</b>
+  </p>
+  <br />
+  <p><u>Vaction Date:</u> {{ entry.visitDate | date() }}</p>
+  <br />
+  <p><u>Written:</u> {{ entry.entryDate | date() }}</p>
+</div>
+
+{% endblock %}
